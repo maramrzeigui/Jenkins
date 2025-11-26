@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE = 'oumayma42/test'  // REMPLACEZ par votre username Docker Hub
+        DOCKER_IMAGE = 'maram47182/test'  // REMPLACEZ par votre username Docker Hub
         DOCKER_TAG = 'latest'
     }
     
