@@ -19,7 +19,7 @@ pipeline {
         stage('SONARQUBE') {
             environment {
                 SONAR_HOST_URL = 'http://host.docker.internal:9000'
-                SONAR_AUTH_TOKEN = credentials('sonarqube')
+                SONAR_AUTH_TOKEN = credentials('sonar-token-secret')
             }
             steps {
                 sh '''
