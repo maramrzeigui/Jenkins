@@ -23,7 +23,7 @@ pipeline {
             }
             steps {
                 sh '''
-                mvn sonar:sonar \\
+                mvn sonar:sonar -X \\
                   -Dsonar.projectKey=devops_git \\
                   -Dsonar.host.url=$SONAR_HOST_URL \
                   -Dsonar.token=$SONAR_AUTH_TOKEN
